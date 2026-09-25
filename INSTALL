@@ -1,0 +1,134 @@
+# INSTALLATION AND BUILD GUIDE
+# Enterprise CUDA StreamFlow Pipeline
+
+This document provides step-by-step instructions for configuring, building, and running the project across different hardware and software environments.
+
+---
+
+## 1. System Requirements
+
+### Hardware Requirements
+- **NVIDIA GPU Target**:
+  - NVIDIA Kepler, Maxwell, Pascal, Volta, Turing, Ampere, Ada Lovelace, or Hopper architecture (Compute Capability >= 5.0).
+  - Minimum 2 GB VRAM (GTX 900 series, GTX 10-series, RTX 20/30/40 series, Tesla T4/V100/A100).
+- **CPU / Simulator Target**:
+  - Any standard x86_64 or ARM64 processor (Intel, AMD, Apple Silicon).
+  - Multi-core processor recommended for OpenMP thread parallelism.
+  - Minimum 2 GB Host RAM.
+
+### Software Prerequisites
+- **Linux** (Ubuntu 20.04/22.04/24.04/26.04, Debian, RHEL, Fedora, Rocky Linux) or **Windows Subsystem for Linux (WSL2)**:
+  - GCC / G++ (version 7.5 or higher with C++17 support)
+  - GNU Make (`make`)
+  - (Optional for GPU) NVIDIA CUDA Toolkit 10.2, 11.x, or 12.x (`nvcc`)
+  - (Optional for GPU) NVIDIA Display Driver compatible with installed CUDA version
+
+---
+
+## 2. Quick Start (Automated Build & Run)
+
+Clone the repository and run the automated execution driver:
+
+```bash
+git clone <your-repository-url>
+cd "Coursera GPU Course"
+chmod +x run.sh
+./run.sh
+```
+
+`run.sh` automatically performs:
+1. Detection of host CPU and NVIDIA GPU hardware.
+2. Selection of appropriate compiler target (`nvcc` for NVIDIA GPUs or `g++` for the SIMT emulator).
+3. Compilation of binaries into `bin/`.
+4. Execution of the numerical parity verification suite (`--verify`).
+5. Execution of the scalability benchmark matrix (`--benchmark`).
+6. Batch execution across all SIPI benchmark images and sensor signal streams (`--mode all`).
+
+---
+
+## 3. Manual Build Instructions
+
+### Option A: Build with NVIDIA CUDA Compiler (NVCC)
+If you have an NVIDIA GPU and CUDA Toolkit installed:
+
+```bash
+# Build both native CUDA engine and simulator
+make all
+
+# Or explicitly build only the native CUDA engine
+make cuda
+```
+
+The compiled binary will be placed at `bin/enterprise_cuda_engine`.
+
+### Option B: Build Universal CPU SIMT Simulator (GCC / Clang)
+If you are developing on a system without an active NVIDIA GPU, or inside an unaccelerated container:
+
+```bash
+make sim
+```
+
+The compiled binary will be placed at `bin/enterprise_cuda_sim`.
+
+---
+
+## 4. Running the Executables
+
+### 1. Verification Mode
+Compares GPU kernels directly against CPU single-threaded gold standard reference implementations and verifies that Max Absolute Error is 0.0 and RMSE is 0.000000:
+
+```bash
+./bin/enterprise_cuda_sim --verify
+```
+
+### 2. Benchmark Mode
+Runs scalability tests across resolutions (128x128 to 2048x2048) and stream configurations (1, 2, 4, 8 streams):
+
+```bash
+./bin/enterprise_cuda_sim --benchmark --iterations 10
+```
+
+### 3. Batch Image & Signal Pipeline Mode
+Processes all images in `data/input/images/` and signals in `data/input/signals/`:
+
+```bash
+./bin/enterprise_cuda_sim --mode all --streams 4
+```
+
+### 4. Custom Filter on a Specific Image
+Run a 5x5 Gaussian blur with sigma = 1.8:
+```bash
+./bin/enterprise_cuda_sim --input data/input/images/lena_512.ppm --output data/output/images --filter gaussian --kernel-size 5 --sigma 1.8
+```
+
+Run Sobel Edge Detection:
+```bash
+./bin/enterprise_cuda_sim --input data/input/images/baboon_512.ppm --output data/output/images --filter sobel
+```
+
+Run 45-degree Bilinear Image Rotation:
+```bash
+./bin/enterprise_cuda_sim --input data/input/images/clock_256.ppm --output data/output/images --filter rotate --angle 45.0
+```
+
+---
+
+## 5. Running in Cloud Environments (Google Colab / Coursera Lab)
+
+### In Google Colab (Free T4 GPU):
+1. Create a new notebook and select **Runtime > Change runtime type > T4 GPU**.
+2. Clone your repository:
+   ```bash
+   !git clone <your-repository-url>
+   %cd Coursera\ GPU\ Course
+   !make cuda
+   !./run.sh
+   ```
+
+### In Coursera Lab Environment:
+1. Open the terminal inside the Coursera Jupyter / Desktop Lab environment.
+2. Verify NVCC is available:
+   ```bash
+   nvcc --version
+   ```
+3. Run `make` and `./run.sh`.
