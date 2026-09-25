@@ -1,0 +1,498 @@
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (5.943053 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (4.599608 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (5.890641 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (5.887179 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (6.543974 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (6.403953 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (6.888073 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (4.181456 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (24.645435 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (5.560065 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (4.985896 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (9.878279 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (3.510721 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (3.771619 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (9.726633 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (6.952126 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (153.083633 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (14.499170 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (36.927135 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (40.343857 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (20.298634 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (9.132003 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (7.740340 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (7.402846 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (11.537264 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (1.280295 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (4.776543 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (7.343370 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (11.704308 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (0.800696 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (2.569537 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (1.465637 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (2.679301 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (0.950638 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (0.338268 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (3.141354 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (9.937408 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (0.761028 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (5.340873 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (1.657082 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (46.916729 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (9.618764 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (11.248285 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (10.416111 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (16.608217 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (3.520861 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (0.175469 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (2.838945 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (4.608395 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (7.621344 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (2.488648 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (4.036175 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (6.017751 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (4.376450 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (5.844007 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (5.708630 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (11.674616 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (3.818550 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (5.916711 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (5.591056 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (3.483701 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (4.437449 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (5.851515 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (21.634848 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (206.635651 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (26.604038 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (31.423489 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (35.088341 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (11.873082 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (5.024443 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (3.178481 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (2.571416 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (13.852787 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (1.690201 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (11.777694 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (3.509444 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (9.798299 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (0.789945 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (5.066207 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (1.116344 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (1.748552 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (0.245238 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (0.345383 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (0.237595 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (9.935341 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (1.098136 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (1.670898 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (1.222188 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (36.500118 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (5.445316 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (7.955382 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (11.542578 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (4.736537 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (0.149865 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (4.263489 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (0.092866 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (14.438220 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (2.923451 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (0.339438 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (0.232374 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (3.244927 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (5.081305 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (0.351551 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (0.491770 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (15.811076 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (3.446462 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (1.893273 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (2.953356 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (4.206700 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (0.293991 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (0.932522 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (0.591484 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (163.671890 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (23.515404 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (38.087299 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (48.953751 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (16.903244 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (5.216782 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (5.758216 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (3.468209 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (13.321101 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (0.756442 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (4.457699 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (2.070022 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (14.508867 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (2.694549 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (3.931989 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (1.275865 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (1.771339 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (0.210821 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (0.339893 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (2.143277 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (12.858185 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (1.134225 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (7.036455 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (2.463998 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (39.571751 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (18.101334 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (19.772900 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (13.120603 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (0.948950 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (0.108499 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (0.230592 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (0.118144 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (4.500451 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (0.280538 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (0.368164 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (0.243449 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (6.441156 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (0.191345 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (0.339806 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (0.237619 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (16.176004 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (3.540680 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (3.732786 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (1.124584 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (1.742466 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (0.229687 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (0.490263 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (0.384744 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (136.178925 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (12.709874 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (39.927551 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (21.802629 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (12.642689 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (0.765465 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (2.404936 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (1.387497 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (15.800487 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (1.756280 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (1.420791 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (1.038203 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (11.881675 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (1.177605 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (3.946289 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (4.791100 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (3.740416 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (0.191234 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (0.349204 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (0.317824 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (14.990063 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (1.141062 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (3.573341 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (3.292787 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (48.469433 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (7.468224 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (11.928206 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (6.209383 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (3.320100 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (4.527911 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (4.874186 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (0.097235 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (14.556131 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (16.407816 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (8.440135 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (1.025534 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (7.963990 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (0.273468 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (9.652149 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (24.691900 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (16.777416 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (1.821987 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (4.489499 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (15.422635 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (7.864300 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (3.086714 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (12.673332 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (7.914564 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (170.468323 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (18.603905 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (27.937634 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (25.669134 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (12.704972 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (5.305464 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (6.056851 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (4.231255 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (15.043373 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (6.375852 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (2.432915 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (4.462994 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (12.245626 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (6.735731 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (3.668903 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (1.881554 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (2.690423 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (0.280391 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (0.713363 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (0.238150 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (8.757592 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (5.175390 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (1.463090 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (4.524986 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (41.145905 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (5.803779 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (12.145604 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (10.029230 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (0.108490 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (1.575021 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (0.176095 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (3.727794 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (27.324127 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (5.369290 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (9.198814 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (6.170034 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (28.269775 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (11.254159 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (13.225222 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (17.930300 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (90.445747 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (18.398502 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (30.833633 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (12.441058 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (26.834490 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (9.125452 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (11.342596 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (8.153357 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (1286.464722 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (216.870422 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (274.878510 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (95.165222 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (78.726868 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (22.653933 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (27.922443 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (8.348202 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (91.290680 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (19.487616 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (31.012381 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (11.994569 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (86.867737 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (20.166538 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (40.906475 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (14.356049 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (32.731937 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (5.658100 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (21.636208 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (10.542437 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (83.508659 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (25.685760 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (23.454016 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (10.370099 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (298.862946 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (62.056908 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (60.331497 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (28.369017 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (6.608033 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (3.392715 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (6.758607 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (1.915536 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: gaussian
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (13.350279 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] airplane_256 -> Gaussian Blur (14.144508 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] baboon_512 -> Gaussian Blur (31.504028 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] clock_256 -> Gaussian Blur (11.866398 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (333.040955 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] fruits_512 -> Gaussian Blur (24.302485 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] lena_512 -> Gaussian Blur (41.394840 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] messi_512 -> Gaussian Blur (26.616961 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] moon_256 -> Gaussian Blur (6.710309 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] smarties_512 -> Gaussian Blur (27.285980 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (75.896278 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (8.676806 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (0.330207 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (0.181902 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (2.103796 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: gaussian
+[Pipeline] Input: data/input/images/lena_512.ppm | Output: /tmp/custom_test
+  [Processed] lena_512 -> Gaussian Blur (24.198309 ms) => /tmp/custom_test/lena_512_gaussian.ppm
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Input: data/input/signals/acoustic_chirp.csv | Output: /tmp/custom_sig_test
+  [Processed Signal] acoustic_chirp.csv (2.533626 ms) => /tmp/custom_sig_test/acoustic_chirp_filtered.csv
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Input: data/input | Output: data/output
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (5.039719 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (3.749711 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (5.288260 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (5.261915 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (8.625887 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (5.095786 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (4.226563 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (4.553977 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (18.268688 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (2.242459 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (5.486051 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (3.993595 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (4.842770 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (2.483783 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (3.120138 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (1.603238 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (176.483414 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (26.907009 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (48.198544 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (67.749489 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (18.498667 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (6.442302 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (5.827040 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (8.246916 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (19.910583 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (3.632816 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (8.838547 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (8.578119 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (17.059801 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (2.675717 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (5.774878 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (5.203277 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (7.587987 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (5.241808 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (5.869660 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (3.409197 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (14.106789 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (3.207955 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (5.708171 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (6.469789 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (55.771439 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (5.983696 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (10.747923 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (10.840350 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (2.217538 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (2.386718 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (2.308418 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (6.895310 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Input: data/input | Output: data/output
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (2.047153 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (0.463122 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (0.362695 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (0.393412 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (6.195663 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (0.193592 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (0.673660 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (1.363800 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (12.467394 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (2.480877 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (4.311470 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (2.813692 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (4.463622 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (0.193582 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (1.968165 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (0.591542 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (181.112671 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (15.055401 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (35.911232 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (31.654440 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (20.105268 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (4.900360 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (2.862614 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (3.858161 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (13.003407 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (0.795787 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (3.913256 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (1.406673 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (16.259914 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (1.973110 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (4.065952 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (1.059156 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (5.747337 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (0.363137 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (1.987763 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (3.829830 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (10.351745 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (5.975489 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (2.405583 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (2.723809 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (45.475483 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (14.929863 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (18.859873 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (12.885689 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (0.181578 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (1.995273 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (0.176143 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (0.089978 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.
+[Pipeline] Initializing with 4 concurrent streams
+[Pipeline] Mode: all | Filter: all
+[Pipeline] Input: data/input | Output: data/output
+[Pipeline] Found 11 images in data/input/images
+  [Processed] aerial_256 -> Gaussian Blur (17.300703 ms) => data/output/images/aerial_256_gaussian.ppm
+  [Processed] aerial_256 -> Sobel Edge Detection (7.515080 ms) => data/output/images/aerial_256_sobel.pgm
+  [Processed] aerial_256 -> Median Noise Filter (9.121937 ms) => data/output/images/aerial_256_median.ppm
+  [Processed] aerial_256 -> Bilinear Rotation 45.000000 deg (8.669258 ms) => data/output/images/aerial_256_rotated.ppm
+  [Processed] airplane_256 -> Gaussian Blur (6.939848 ms) => data/output/images/airplane_256_gaussian.ppm
+  [Processed] airplane_256 -> Sobel Edge Detection (6.219138 ms) => data/output/images/airplane_256_sobel.pgm
+  [Processed] airplane_256 -> Median Noise Filter (4.107444 ms) => data/output/images/airplane_256_median.ppm
+  [Processed] airplane_256 -> Bilinear Rotation 45.000000 deg (2.404071 ms) => data/output/images/airplane_256_rotated.ppm
+  [Processed] baboon_512 -> Gaussian Blur (18.149427 ms) => data/output/images/baboon_512_gaussian.ppm
+  [Processed] baboon_512 -> Sobel Edge Detection (3.264211 ms) => data/output/images/baboon_512_sobel.pgm
+  [Processed] baboon_512 -> Median Noise Filter (6.164316 ms) => data/output/images/baboon_512_median.ppm
+  [Processed] baboon_512 -> Bilinear Rotation 45.000000 deg (6.132473 ms) => data/output/images/baboon_512_rotated.ppm
+  [Processed] clock_256 -> Gaussian Blur (6.167194 ms) => data/output/images/clock_256_gaussian.ppm
+  [Processed] clock_256 -> Sobel Edge Detection (1.077153 ms) => data/output/images/clock_256_sobel.pgm
+  [Processed] clock_256 -> Median Noise Filter (5.412900 ms) => data/output/images/clock_256_median.ppm
+  [Processed] clock_256 -> Bilinear Rotation 45.000000 deg (2.775735 ms) => data/output/images/clock_256_rotated.ppm
+  [Processed] enterprise_stress_2048 -> Gaussian Blur (145.202972 ms) => data/output/images/enterprise_stress_2048_gaussian.ppm
+  [Processed] enterprise_stress_2048 -> Sobel Edge Detection (18.714012 ms) => data/output/images/enterprise_stress_2048_sobel.pgm
+  [Processed] enterprise_stress_2048 -> Median Noise Filter (28.741756 ms) => data/output/images/enterprise_stress_2048_median.ppm
+  [Processed] enterprise_stress_2048 -> Bilinear Rotation 45.000000 deg (21.860872 ms) => data/output/images/enterprise_stress_2048_rotated.ppm
+  [Processed] fruits_512 -> Gaussian Blur (23.317127 ms) => data/output/images/fruits_512_gaussian.ppm
+  [Processed] fruits_512 -> Sobel Edge Detection (3.297145 ms) => data/output/images/fruits_512_sobel.pgm
+  [Processed] fruits_512 -> Median Noise Filter (2.458524 ms) => data/output/images/fruits_512_median.ppm
+  [Processed] fruits_512 -> Bilinear Rotation 45.000000 deg (1.929629 ms) => data/output/images/fruits_512_rotated.ppm
+  [Processed] lena_512 -> Gaussian Blur (14.949136 ms) => data/output/images/lena_512_gaussian.ppm
+  [Processed] lena_512 -> Sobel Edge Detection (1.684709 ms) => data/output/images/lena_512_sobel.pgm
+  [Processed] lena_512 -> Median Noise Filter (1.402214 ms) => data/output/images/lena_512_median.ppm
+  [Processed] lena_512 -> Bilinear Rotation 45.000000 deg (2.888678 ms) => data/output/images/lena_512_rotated.ppm
+  [Processed] messi_512 -> Gaussian Blur (18.992516 ms) => data/output/images/messi_512_gaussian.ppm
+  [Processed] messi_512 -> Sobel Edge Detection (5.574776 ms) => data/output/images/messi_512_sobel.pgm
+  [Processed] messi_512 -> Median Noise Filter (2.375960 ms) => data/output/images/messi_512_median.ppm
+  [Processed] messi_512 -> Bilinear Rotation 45.000000 deg (4.361016 ms) => data/output/images/messi_512_rotated.ppm
+  [Processed] moon_256 -> Gaussian Blur (4.441037 ms) => data/output/images/moon_256_gaussian.ppm
+  [Processed] moon_256 -> Sobel Edge Detection (2.174770 ms) => data/output/images/moon_256_sobel.pgm
+  [Processed] moon_256 -> Median Noise Filter (1.748149 ms) => data/output/images/moon_256_median.ppm
+  [Processed] moon_256 -> Bilinear Rotation 45.000000 deg (2.771541 ms) => data/output/images/moon_256_rotated.ppm
+  [Processed] smarties_512 -> Gaussian Blur (19.028339 ms) => data/output/images/smarties_512_gaussian.ppm
+  [Processed] smarties_512 -> Sobel Edge Detection (4.956264 ms) => data/output/images/smarties_512_sobel.pgm
+  [Processed] smarties_512 -> Median Noise Filter (8.321385 ms) => data/output/images/smarties_512_median.ppm
+  [Processed] smarties_512 -> Bilinear Rotation 45.000000 deg (2.275181 ms) => data/output/images/smarties_512_rotated.ppm
+  [Processed] synthetic_zoneplate_1024 -> Gaussian Blur (43.009983 ms) => data/output/images/synthetic_zoneplate_1024_gaussian.ppm
+  [Processed] synthetic_zoneplate_1024 -> Sobel Edge Detection (5.905422 ms) => data/output/images/synthetic_zoneplate_1024_sobel.pgm
+  [Processed] synthetic_zoneplate_1024 -> Median Noise Filter (7.733027 ms) => data/output/images/synthetic_zoneplate_1024_median.ppm
+  [Processed] synthetic_zoneplate_1024 -> Bilinear Rotation 45.000000 deg (7.395329 ms) => data/output/images/synthetic_zoneplate_1024_rotated.ppm
+  [Processed Signal] sensor_array_ch1.csv (N=10000) Energy: 6628.638 -> 6306.651 (0.112098 ms) => data/output/signals/sensor_array_ch1_filtered.csv
+  [Processed Signal] sensor_array_ch2.csv (N=10000) Energy: 6642.661 -> 6328.674 (0.282028 ms) => data/output/signals/sensor_array_ch2_filtered.csv
+  [Processed Signal] acoustic_chirp.csv (N=16384) Energy: 8189.584 -> 3099.003 (1.405608 ms) => data/output/signals/acoustic_chirp_filtered.csv
+  [Processed Signal] seismic_trace.csv (N=8192) Energy: 98.04405 -> 98.06689 (0.525162 ms) => data/output/signals/seismic_trace_filtered.csv
+[Pipeline] Batch execution complete. All artifacts generated successfully.

@@ -1,0 +1,35 @@
+Timestamp: 2026-09-25T16:00:00Z
+Target Architecture: CUDA StreamFlow Engine (Dual Native/Sim)
+--------------------------------------------------------------------------------
+Filter: 2D Gaussian Blur (512x512)
+  Max Absolute Error: 0.000000
+  Root Mean Sq Error: 0.000000
+  Peak SNR (PSNR dB): 99.990000 dB
+  Status: [PASSED]
+--------------------------------------------------------------------------------
+Filter: 2D Sobel Edge Magnitude (512x512)
+  Max Absolute Error: 0.000000
+  Root Mean Sq Error: 0.000000
+  Peak SNR (PSNR dB): 99.990000 dB
+  Status: [PASSED]
+--------------------------------------------------------------------------------
+Filter: 2D Median Filter 3x3 (512x512)
+  Max Absolute Error: 0.000000
+  Root Mean Sq Error: 0.000000
+  Peak SNR (PSNR dB): 99.990000 dB
+  Status: [PASSED]
+--------------------------------------------------------------------------------
+Filter: Bilinear Image Rotation (45.000000 deg)
+  Max Absolute Error: 0.000000
+  Root Mean Sq Error: 0.000000
+  Peak SNR (PSNR dB): 99.990000 dB
+  Status: [PASSED]
+--------------------------------------------------------------------------------
+Signal: 1D FIR Matched Filter (Length = 16384)
+  Max Absolute Error: 0.000000
+  Root Mean Sq Error: 0.000000
+  SNR (PSNR dB):      99.990000 dB
+  Status: [PASSED]
+================================================================================
+OVERALL SUITE STATUS: ALL TESTS PASSED [100%]
+Verification artifact saved to: artifacts/logs/verification_report.txt
